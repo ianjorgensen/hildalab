@@ -1,0 +1,32 @@
+{
+  "name": "vida",
+  "version": "0.7.2",
+  "main": "server.js",
+  "description": "A dynamic web server. Never hit refresh again",
+  "author": {
+    "name": "Ian Jorgensen",
+    "email": "jorgensen.ian@gmail.com"
+  },
+  "dependencies": {
+    "common": "~0.2.1",
+    "less": "~1.3.0",
+    "mime": "~1.2.5",
+    "router": "~0.4.6",
+    "socket.io": "~0.9.6",
+    "watchr": "~2.1.2"
+  },
+  "bin": {
+    "vida": "./server.js"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "BSD",
+  "readme": "vida\n=====\n\na dynamic web server, never hit refresh again\n\n\tnpm install lifee\n\n\nRun lifee on a directory and head over to localhost:9080/{filepath}. You can now add life.js' to the html files you want to bring to life. Next time you save the file or any of its dependant css and javascript, the file will refresh itself in the browser. Never hit refresh again!\n\nIf you use sublime you can add this plugin that saves the file on every click\n\n\timport sublime, sublime_plugin\n\n\tclass ModCommand(sublime_plugin.EventListener):\n\t    def on_modified(self, view):\n\t    \tif view.file_name():\n\t    \t\t#print view.file_name()\n\t    \t\tview.run_command('save');",
+  "_id": "vida@0.7.2",
+  "dist": {
+    "shasum": "b1e7374fe3ab6edf9937c7847c8619296fd1b4f3"
+  },
+  "_from": "./vida/"
+}
